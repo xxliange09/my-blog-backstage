@@ -23,8 +23,8 @@ const LoginPage = () => {
 
         }
     }, [isSubmit]);
-    const userLogin = async (user: string, pass: string) => {
-        const res: any = await axios.post(`http://localhost:3000/api/user/login`, {
+    const userLogin = async (user, pass) => {
+        const res = await axios.post(`http://localhost:3000/api/user/login`, {
             user, pass
         }, {
             headers: {
