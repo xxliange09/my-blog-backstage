@@ -1,7 +1,12 @@
+"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
+import React from 'react'
 
 export default function Home() {
+  React.useEffect(() => {
+    window.location.href = "/login";
+  }, []);
   return (
     <main className={styles.main}>
       <div className={styles.description}>
