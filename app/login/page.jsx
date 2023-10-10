@@ -4,9 +4,9 @@ import axios from "axios"
 import styles from './page.module.scss'
 
 const LoginPage = () => {
-    const [isSubmit, setSubmit] = React.useState<boolean>(false);
-    const [user, setUser] = React.useState<string>('');
-    const [password, setPassword] = React.useState<string>('');
+    const [isSubmit, setSubmit] = React.useState(false);
+    const [user, setUser] = React.useState('');
+    const [password, setPassword] = React.useState('');
 
     // React.useEffect(() => {
     //     const getData = async () => {
