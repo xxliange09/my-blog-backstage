@@ -24,7 +24,7 @@ const LoginPage = () => {
         }
     }, [isSubmit]);
     const userLogin = async (user, pass) => {
-        const res = await axios.post(`http://localhost:3000/api/user/login`, {
+        const res = await axios.post(`https://api.xxliange.club/api/user/login`, {
             user, pass
         }, {
             headers: {
